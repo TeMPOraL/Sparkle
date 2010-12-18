@@ -7,8 +7,19 @@ public class Material
     private String _name;
     private Color3f _color;
     private double _specificHeat;
-    private double _transparency;
+    private float _transparency;
     private double _density; // gestosc
+    private double _thermalConductivity;
+
+    public double get_thermalConductivity()
+    {
+        return _thermalConductivity;
+    }
+
+    public void set_thermalConductivity( double _thermalConductivity )
+    {
+        this._thermalConductivity = _thermalConductivity;
+    }
 
     public double get_density()
     {
@@ -20,12 +31,14 @@ public class Material
         this._density = _density;
     }
 
-    public Material( String name, Color3f color, double specificHeat, double transparency )
+    public Material( String name, Color3f color, double specificHeat, double transparency,
+            double thermalConductivity )
     {
         set_name( name );
         set_color( color );
         set_specificHeat( specificHeat );
         set_transparency( transparency );
+        set_thermalConductivity( thermalConductivity );
     }
 
     public void set_name( String _name )
@@ -60,10 +73,10 @@ public class Material
 
     public void set_transparency( double _transparency )
     {
-        this._transparency = _transparency;
+        this._transparency = (float)( _transparency );
     }
 
-    public double get_transparency()
+    public float get_transparency()
     {
         return _transparency;
     }

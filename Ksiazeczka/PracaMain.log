@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.11.27)  11 DEC 2010 16:08
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.11.27)  18 DEC 2010 11:45
 entering extended mode
 **D:/Studia/Sparkle/Sparkle/Ksiazeczka/PracaMain.tex
 (D:/Studia/Sparkle/Sparkle/Ksiazeczka/PracaMain.tex
@@ -457,20 +457,21 @@ LaTeX Warning: Unused global option(s):
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\PracaMain.aux
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R1_Wstep.aux)
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R2_TeoriaFizyka.aux)
+(D:\Studia\Sparkle\Sparkle\Ksiazeczka\R5_TeoriaAutomatKomorkowy.aux)
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R3_Projekt.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 43.
 
 ("C:\Program Files\Miktex\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -523,36 +524,36 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count108
-LaTeX Font Info:    Try loading font information for T1+phv on input line 46.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 45.
 ("C:\Program Files\Miktex\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 45.
 
 <agh.jpg, id=1, 146.4672pt x 284.7438pt>
 File: agh.jpg Graphic file (type jpg)
  <use agh.jpg>
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 46.
+(Font)              <10.95> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 45.
  [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map} <D:/Studia/Sparkle/Sparkle
 /Ksiazeczka/agh.jpg>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 45.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 
  []
 
@@ -562,7 +563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
 ! Undefined control sequence.
 \titlepages ...ce *{1mm} \par {\large \@facultyEN 
                                                   }}\vspace *{1cm} \par \ifp...
-l.46 \titlepages
+l.45 \titlepages
                 
 ? 
 File: agh.jpg Graphic file (type jpg)
@@ -570,7 +571,7 @@ File: agh.jpg Graphic file (type jpg)
 ! Undefined control sequence.
 \titlepages ...par {\huge \scshape \@thesistypeEN 
                                                   }\\\vspace *{2cm} \par {\L...
-l.46 \titlepages
+l.45 \titlepages
                 
 ? 
 
@@ -580,18 +581,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \titlepages
+l.45 \titlepages
                 
 ? 
+! Undefined control sequence.
+\titlepages ...ARGE {\bfseries \scshape \@titleEN 
+                                                  }}\\\vspace *{3cm} \par \b...
+l.45 \titlepages
+                
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \titlepages
+                
+? 
+! Undefined control sequence.
+<recently read> \@supervisorEN 
+                               
+l.45 \titlepages
+                
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+
+ []
+
 [1
 
 ] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
  (D:\Studia\Sparkle\Sparkle\Ksiazeczka\PracaMain.toc)
 \tf@toc=\write3
  [5
@@ -607,7 +635,7 @@ Rozdzia\l  1.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.51 \include{R1_Wstep}
+l.50 \include{R1_Wstep}
                        
 ? 
 [7] (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R2_TeoriaFizyka.tex
@@ -619,66 +647,67 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1 ﻿
-       \chapter{Teoria}
+       %TODO:
 ? 
 Rozdzia\l  2.
-
-LaTeX Warning: Reference `Proces spalania' on page 8 undefined on input line 10
-.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 17.
 ("C:\Program Files\Miktex\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
  [8
 
 
 
 ]
 
-LaTeX Warning: Reference `przewodnictwa' on page 9 undefined on input line 67.
+LaTeX Warning: Reference `Proces spalania' on page 9 undefined on input line 46
+.
 
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 54.
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.106 \item R
-             efleksyjność czyli odbijalność
+l.102 N
+       a uwagę zasługuje też fakt, że przewodność metali maleje wraz z...
+
 ? 
 [9]
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.165 \begin {itemize}
+                      
+? 
+[10]
 
-LaTeX Warning: Reference `emisyjnosc_konwekcja' on page 10 undefined on input l
-ine 131.
-
-
-LaTeX Warning: Command \l invalid in math mode on input line 133.
+LaTeX Warning: Command \l invalid in math mode on input line 194.
 
 ! Undefined control sequence.
-l.133 Q_{całk}=\alfa
-                     _{całk}*\sigma*A_{s}*(T_{s}^4-T_\inf^4)
+l.194 \dot{Q_{całk}}=\alfa
+                           _{całk}*\sigma*A_{s}*(T_{s}^4-T_\inf^4)
 ? 
 
-LaTeX Warning: Command \l invalid in math mode on input line 133.
+LaTeX Warning: Command \l invalid in math mode on input line 194.
 
 ! Missing { inserted.
 <to be read again> 
                    \mathop 
-l.133 ...alfa_{całk}*\sigma*A_{s}*(T_{s}^4-T_\inf
+l.194 ...alfa_{całk}*\sigma*A_{s}*(T_{s}^4-T_\inf
                                                   ^4)
 ? 
 ! You can't use `\eqno' in math mode.
 \endequation ->\eqno 
                      \hbox {\@eqnnum }$$\@ignoretrue 
-l.135 \end {equation}
+l.196 \end {equation}
                      
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.135 \end {equation}
+l.196 \end {equation}
                      
 ? 
 Missing character: There is no � in font cmr8!
@@ -686,29 +715,29 @@ Missing character: There is no � in font cmr8!
 ! Undefined control sequence.
 <recently read> \alfa 
                       
-l.138 \item \alfa
+l.199 \item \alfa
                  _{całk} - całkowity współczynnik wymiany ciepła
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.138 \item \alfa_
+l.199 \item \alfa_
                   {całk} - całkowity współczynnik wymiany ciepła
 ? 
 
-LaTeX Warning: Command \l invalid in math mode on input line 138.
+LaTeX Warning: Command \l invalid in math mode on input line 199.
 
 
-LaTeX Warning: Command \l invalid in math mode on input line 138.
+LaTeX Warning: Command \l invalid in math mode on input line 199.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 138.
+LaTeX Warning: Command \' invalid in math mode on input line 199.
 
 
-LaTeX Warning: Command \l invalid in math mode on input line 138.
+LaTeX Warning: Command \l invalid in math mode on input line 199.
 
 
-LaTeX Warning: Command \l invalid in math mode on input line 138.
+LaTeX Warning: Command \l invalid in math mode on input line 199.
 
 
 ! LaTeX Error: Command \item invalid in math mode.
@@ -717,7 +746,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \item
+l.200 \item
             T_\inf - temperatura powietrza w znacznej odległości
 ? 
 
@@ -727,7 +756,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \item T
+l.200 \item T
              _\inf - temperatura powietrza w znacznej odległości
 ? 
 
@@ -737,20 +766,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \item T
+l.200 \item T
              _\inf - temperatura powietrza w znacznej odległości
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \mathop 
-l.139 \item T_\inf
+l.200 \item T_\inf
                    - temperatura powietrza w znacznej odległości
 ? 
 
-LaTeX Warning: Command \l invalid in math mode on input line 139.
+LaTeX Warning: Command \l invalid in math mode on input line 200.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 139.
+LaTeX Warning: Command \' invalid in math mode on input line 200.
 
 
 ! LaTeX Error: Command \end{itemize} invalid in math mode.
@@ -759,7 +788,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end {itemize}
+l.201 \end {itemize}
                     
 ? 
 
@@ -769,7 +798,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end {itemize}
+l.201 \end {itemize}
                     
 ? 
 
@@ -779,19 +808,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end {itemize}
+l.201 \end {itemize}
                     
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.140 \end {itemize}
+l.201 \end {itemize}
                     
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.140 \end {itemize}
+l.201 \end {itemize}
                     
 ? 
 Missing character: There is no � in font cmr8!
@@ -802,27 +831,34 @@ Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr8!
 Missing character: There is no � in font cmr8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--142
+Underfull \hbox (badness 10000) in paragraph at lines 199--203
 []$[] \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 cakowitywspczynnikwymianyciepaT
 []$ \T1/ptm/m/n/10.95 Om�wione
  []
 
-)
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
-l.52 \include {R2_TeoriaFizyka}
+l.210 \begin {equation}
+                       
+? 
+[11])
+! Undefined control sequence.
+<recently read> \@shorttitlePL 
+                               
+l.51 \include {R2_TeoriaFizyka}
                                
 ? 
-[10] (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R3_Projekt.tex
+[12] ("C:\Program Files\Miktex\tex\latex\tools\.tex" File ignored)
+(D:\Studia\Sparkle\Sparkle\Ksiazeczka\R3_Projekt.tex
 Rozdzia\l  3.
-<componentDiagram.jpg, id=46, 444.4605pt x 162.00525pt>
+<componentDiagram.jpg, id=52, 444.4605pt x 162.00525pt>
 File: componentDiagram.jpg Graphic file (type jpg)
 
 <use componentDiagram.jpg>
 Underfull \hbox (badness 5893) in paragraph at lines 25--36
 \T1/ptm/m/n/10.95 Zale�no�ci pomi�dzy poszczeg�l-nymi kom-po-nen-tami przed-sta
-wia di-a-gram kom-po-nen-t�w 3.1[]
+wia di-a-gram kom-po-nen-t�w 4.1[]
  []
 
 
@@ -831,11 +867,13 @@ Underfull \hbox (badness 1107) in paragraph at lines 37--39
 l-View-Controller. El-e-mentem r�ni�-cym
  []
 
-[11
+[13
 
 
 
-] <useCase.jpg, id=50, 481.8pt x 615.4995pt>
+
+
+] <useCase.jpg, id=57, 481.8pt x 615.4995pt>
 File: useCase.jpg Graphic file (type jpg)
  <use useCase.jpg>
 Overfull \hbox (26.5547pt too wide) in paragraph at lines 52--52
@@ -849,24 +887,25 @@ Overfull \hbox (26.5547pt too wide) in paragraph at lines 52--52
 l.53 \include{R3_Projekt}
                          
 ? 
-[12 <D:/Studia/Sparkle/Sparkle/Ksiazeczka/componentDiagram.jpg>]
+[14 <D:/Studia/Sparkle/Sparkle/Ksiazeczka/componentDiagram.jpg>]
 ! Undefined control sequence.
 <recently read> \@shorttitlePL 
                                
 l.53 \include{R3_Projekt}
                          
 ? 
-[13 <D:/Studia/Sparkle/Sparkle/Ksiazeczka/useCase.jpg>]
+[15 <D:/Studia/Sparkle/Sparkle/Ksiazeczka/useCase.jpg>]
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\PracaMain.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [14
+) [16
 
 
 ] (D:\Studia\Sparkle\Sparkle\Ksiazeczka\PracaMain.aux
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R1_Wstep.aux)
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R2_TeoriaFizyka.aux)
+(D:\Studia\Sparkle\Sparkle\Ksiazeczka\.aux)
 (D:\Studia\Sparkle\Sparkle\Ksiazeczka\R3_Projekt.aux))
 
 LaTeX Warning: There were undefined references.
@@ -876,13 +915,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4761 strings out of 495285
- 62995 string characters out of 3180683
- 153657 words of memory out of 3000000
- 7839 multiletter control sequences out of 15000+200000
+ 4775 strings out of 495285
+ 63445 string characters out of 3180683
+ 154657 words of memory out of 3000000
+ 7846 multiletter control sequences out of 15000+200000
  86471 words of font info for 68 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,11n,45p,366b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,12n,45p,377b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/Miktex/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
 ktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/Miktex/fonts/t
 ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/Miktex/fonts/type1/public/a
@@ -894,9 +933,9 @@ ype1/urw/helvetic/uhvb8a.pfb><C:/Program Files/Miktex/fonts/type1/urw/helvetic/
 uhvr8a.pfb><C:/Program Files/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/Progra
 m Files/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/Miktex/fonts/
 type1/urw/times/utmr8a.pfb>
-Output written on PracaMain.pdf (14 pages, 302971 bytes).
+Output written on PracaMain.pdf (16 pages, 314339 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

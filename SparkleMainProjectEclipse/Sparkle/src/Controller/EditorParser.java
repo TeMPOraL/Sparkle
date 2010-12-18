@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import javax.vecmath.Point3d;
 
 import Model.World;
-import Scene.Scene3D;
+import View.Scene3D;
 
 public class EditorParser
 {
@@ -44,6 +44,8 @@ public class EditorParser
             int sizeZ = Integer.valueOf( lineParts[ 7 ] );
             String material = lineParts[ 9 ];
             Scene3D scene = Scene3D.getScene( MainWindow._sceneCanvas );
+            System.out.println( "x y z " + leftBottomBackCornerX + " " + leftBottomBackCornerY
+                    + " " + leftBottomBackCornerZ );
             world.addBuildingPart( new Point3d( leftBottomBackCornerX, leftBottomBackCornerY,
                 leftBottomBackCornerZ ), new Point3d( sizeX, sizeY, sizeZ ), material, scene );
         }
