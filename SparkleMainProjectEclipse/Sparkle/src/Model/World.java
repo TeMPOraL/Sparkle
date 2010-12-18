@@ -16,6 +16,8 @@ public class World
     private static World _instance = new World(
         Scene3D.getScene( Controller.MainWindow._sceneCanvas ) );
     private Scene3D _scene;
+    private double _worldInitTemp = 20.0;
+    private HeatConducterWithConvection _heatConducter = new HeatConducterWithConvection();
 
     private void initMaterials()
     {
@@ -23,11 +25,11 @@ public class World
             new Material( "Wood", EnvSettings.WOOD_COLOR, EnvSettings.WOOD_SPECIFIC_HEAT,
                 EnvSettings.WOOD_TRANSPARENCY, EnvSettings.WOOD_THERMAL_CONDUCTIVITY ) );
         get_availableMaterials().add(
-            new Material( "Air", EnvSettings.AIR_COLOR, EnvSettings.AIR_SPECIFIC_HEAT,
+            new Material( "Air", Scene3D.setBlue( _worldInitTemp ), EnvSettings.AIR_SPECIFIC_HEAT,
                 EnvSettings.AIR_TRANSPARENCY, EnvSettings.AIR_THERMAL_CONDUCTIVITY ) );
         get_availableMaterials().add(
             new Material( "Metal", EnvSettings.METAL_COLOR, EnvSettings.METAL_SPECIFIC_HEAT,
-                EnvSettings.AIR_TRANSPARENCY, EnvSettings.METAL_THERMAL_CONDUCTIVITY ) );
+                EnvSettings.METAL_TRANSPARENCY, EnvSettings.METAL_THERMAL_CONDUCTIVITY ) );
     }
 
     public static Material getMaterial( String materialName )
@@ -56,8 +58,6 @@ public class World
                     _worldOldValues[ i ][ j ][ k ].set_material( mat );
                     int blockIndex = Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( i, j,
                         k );
-                    System.out.println( "index "
-                            + Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( 0, 0, 1 ) );
                     scene.addNewBlockToScene( mat, blockIndex );
                 }
             }
@@ -74,9 +74,8 @@ public class World
                 {
                     // System.out.println( "material  under air name " +
                     // getMaterial( "Air" ) );
-                    double defaultTemp = 20.0;
-                    _worldCurrentValues[ i ][ j ][ k ].set_temp( defaultTemp );
-                    _worldOldValues[ i ][ j ][ k ].set_temp( defaultTemp );
+                    _worldCurrentValues[ i ][ j ][ k ].set_temp( _worldInitTemp );
+                    _worldOldValues[ i ][ j ][ k ].set_temp( _worldInitTemp );
                     _scene.updateBlockWhileSimulation(
                         Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( i, j, k ),
                         _worldCurrentValues[ i ][ j ][ k ].get_temp(),
@@ -97,9 +96,10 @@ public class World
                     // System.out.println( "material  under air name " +
                     // getMaterial( "Air" ) );
                     double airMass = 2.0;
-                    _worldCurrentValues[ i ][ j ][ k ] = new Cell( getMaterial( "Air" ), 20.0,
-                        airMass );
-                    _worldOldValues[ i ][ j ][ k ] = new Cell( getMaterial( "Air" ), 20.0, airMass );
+                    _worldCurrentValues[ i ][ j ][ k ] = new Cell( getMaterial( "Air" ),
+                        _worldInitTemp, airMass );
+                    _worldOldValues[ i ][ j ][ k ] = new Cell( getMaterial( "Air" ),
+                        _worldInitTemp, airMass );
                 }
             }
         }
@@ -237,21 +237,21 @@ public class World
 
     public void simulateHeatConduction()
     {
-        // System.out.println( "print all scene" );
-        // for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
-        // {
-        // for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
-        // {
-        // for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
-        // {
-        // System.out
-        // .println( "cell " + i + " " + j + " " + _worldOldValues[ i ][ j ][ k
-        // ] );
-        // }
-        // }
-        // }
-        // System.out.println( "done1" );
-        System.out.println( "symulacja siê liczy" );
+        // System.out.println( "material drugiego rzedu "
+        // + _worldCurrentValues[ 2 ][ 1 ][ 4 ].get_material() );
+        System.out.println( "print all scene" );
+        for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
+        {
+            for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
+            {
+                for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
+                {
+                    System.out
+                            .println( "cell " + i + " " + j + " " + _worldOldValues[ i ][ j ][ k ] );
+                }
+            }
+        }
+        System.out.println( "done1" );
         for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
         {
             for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
@@ -259,7 +259,7 @@ public class World
                 for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
                 {
                     updateOldValues();
-                    HeatConducter.conductHeat( _worldCurrentValues[ i ][ j ][ k ],
+                    _heatConducter.conductHeat( _worldCurrentValues[ i ][ j ][ k ],
                         _worldCurrentValues, getNeighbours( new CellIndex( i, j, k ) ),
                         _worldOldValues[ i ][ j ][ k ], _worldOldValues );
                     _scene.updateBlockWhileSimulation(
