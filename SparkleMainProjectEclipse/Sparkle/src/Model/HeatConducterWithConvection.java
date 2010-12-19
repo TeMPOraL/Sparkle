@@ -4,6 +4,9 @@ import Helpers.EnvSettings;
 
 public class HeatConducterWithConvection extends HeatConducter
 {
+    static final double SIDE_ENERGY_FACTOR = 0.15;
+    static final double TOP_ENERGY_FACTOR = 0.15;
+    static final double DOWN_ENERGY_FACTOR = 0.15;
     @Override
     public double calculateEnergyFlow( Cell cell, Cell neigh, int whichNeighbour )
     {
@@ -12,22 +15,19 @@ public class HeatConducterWithConvection extends HeatConducter
         if( cell.get_material().get_name().equals( "Air" )
                 && neigh.get_material().get_name().equals( "Air" ) )
         {
-            System.out.println( "we are here" );
             energy *= EnvSettings.CONSTANT_ENERGY_FACTOR;
-            double sideEnergyFactor = 0.15;
-            double topEnergyFactor = 0.2;
-            double downEnergyFactor = 0.1;
+
             if( whichNeighbour == EnvSettings.TOP_NEIGHBOUR )
             {
-                energy *= topEnergyFactor;
+                energy *= TOP_ENERGY_FACTOR;
             }
             else if( whichNeighbour == EnvSettings.BOTTOM_NEIGBOUR )
             {
-                energy *= downEnergyFactor;
+                energy *= DOWN_ENERGY_FACTOR;
             }
             else
             {
-                energy *= sideEnergyFactor;
+                energy *= SIDE_ENERGY_FACTOR;
             }
         }
         return energy;

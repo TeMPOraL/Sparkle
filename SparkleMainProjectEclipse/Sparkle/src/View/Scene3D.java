@@ -159,9 +159,7 @@ public class Scene3D
 
     public void updateBlockWhileSimulation( int blockIndex, double temp, Material material )
     {
-        System.out
-                .println( "material transparency " + material.get_transparency() + " " + material );
-        float scale = clamp( (float)( temp / EnvSettings.FIRE_TEMP ), 0.0f, 1.0f );
+         float scale = clamp( (float)( temp / EnvSettings.FIRE_TEMP ), 0.0f, 1.0f );
         setCellColor( new Color3f( lerp( 0.0f, 1.0f, scale ), // red
             0.0f, // green
             lerp( 1.0f, 0.0f, scale ) ), blockIndex, material );
