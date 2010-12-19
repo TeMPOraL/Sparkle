@@ -15,14 +15,20 @@ public class HeatConducterWithConvection extends HeatConducter
         if( cell.get_material().get_name().equals( "Air" )
                 && neigh.get_material().get_name().equals( "Air" ) )
         {
-
             energy *= EnvSettings.CONSTANT_ENERGY_FACTOR;
 
 			if( whichNeighbour == EnvSettings.TOP_NEIGHBOUR )
             {
                 energy *= TOP_ENERGY_FACTOR;
+
+            if( ( whichNeighbour == EnvSettings.TOP_NEIGHBOUR && energy < 0 )
+                    || ( whichNeighbour == EnvSettings.BOTTOM_NEIGBOUR && energy > 0 ) )
+            {
+                energy *= TOP_ENERGY_FACTOR;
+
             }
-            else if( whichNeighbour == EnvSettings.BOTTOM_NEIGBOUR )
+            else if( ( whichNeighbour == EnvSettings.BOTTOM_NEIGBOUR && energy < 0 )
+                    || ( whichNeighbour == EnvSettings.TOP_NEIGHBOUR && energy > 0 ) )
             {
                 energy *= DOWN_ENERGY_FACTOR;
             }

@@ -208,6 +208,9 @@ public class World
             Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( x, y, z ),
             _worldCurrentValues[ x ][ y ][ z ].get_temp(),
             _worldCurrentValues[ x ][ y ][ z ].get_material() );
+        _scene.markStartOfHeatConduction(
+            Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( x, y, z ),
+            _worldCurrentValues[ x ][ y ][ z ].get_material() );
         // for( int i = 0; i < EnvSettings.getMAX_LENGTH(); ++i )
         // {
         // for( int j = 0; j < EnvSettings.getMAX_LENGTH(); ++j )
@@ -239,18 +242,20 @@ public class World
     {
         // System.out.println( "material drugiego rzedu "
         // + _worldCurrentValues[ 2 ][ 1 ][ 4 ].get_material() );
-        System.out.println( "print all scene" );
-        for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
-        {
-            for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
-            {
-                for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
-                {
-                    System.out
-                            .println( "cell " + i + " " + j + " " + _worldOldValues[ i ][ j ][ k ] );
-                }
-            }
-        }
+        // System.out.println( "print all scene" );
+        // for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
+        // {
+        // for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
+        // {
+        // for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
+        // {
+        // System.out
+        // .println( "cell " + i + " " + j + " " + _worldOldValues[ i ][ j ][ k
+        // ] );
+        // }
+        // }
+        // }
+        updateOldValues();
         System.out.println( "done1" );
         for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
         {
@@ -258,10 +263,10 @@ public class World
             {
                 for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
                 {
-                    updateOldValues();
+                    CellIndex cellId = new CellIndex( i, j, k );
                     _heatConducter.conductHeat( _worldCurrentValues[ i ][ j ][ k ],
-                        _worldCurrentValues, getNeighbours( new CellIndex( i, j, k ) ),
-                        _worldOldValues[ i ][ j ][ k ], _worldOldValues );
+                        _worldCurrentValues, getNeighbours( cellId ),
+                        _worldOldValues[ i ][ j ][ k ], _worldOldValues, cellId );
                     _scene.updateBlockWhileSimulation(
                         Helpers.WorldSceneMediator.changeWorldIndexToSceneIndex( i, j, k ),
                         _worldCurrentValues[ i ][ j ][ k ].get_temp(),
