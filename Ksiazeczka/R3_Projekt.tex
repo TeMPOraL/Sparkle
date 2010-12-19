@@ -1,10 +1,10 @@
 \chapter {Projekt}
 Głównym celem projektu jest stworzenie i weryfikacja modelu rozprzestrzeniania się ognia wykorzystując niehomogeniczne automaty
 komórkowe. Nacisk z pracy został położony na opracowanie algorytmu najdokładniej oddającego rzeczywistość.
-Aplikacja, nazwa Sparkle została zarojektowana tak, aby zapewnić użytkownikowi wysoką ergonomię pracy i łatwość nauki.
-Podczas projektowania i implementacji szczególna uwaga została poświęcona dalszym możliwościom rozbudy programu.
+Aplikacja, nazwa Sparkle została zaprojektowana tak, aby zapewnić użytkownikowi wysoką ergonomię pracy i łatwość nauki.
+Podczas projektowania i implementacji szczególna uwaga została poświęcona dalszym możliwościom rozbudowy programu.
 \label{cha:projekt}
-\section {Główne zalożenia}
+\section {Główne zależenia}
 \begin {itemize}
 \item Projekt obejmuje zarówno stworzenie modelu rozprzestrzeniania pożaru jak i  uproszczonej wizualizacji oraz graficznego interfejsu użytkownika (GUI).
 \item Interfejs aplikacji powinien umożliwiać edycję budynku w którym przeprowadzana jest symulacja: dodawanie elementów konstrukcji, 
@@ -12,14 +12,14 @@ określanie materiałów z których zostały stworzone.
 \item Użytkownik powinien mieć możliwość określenia źródła ognia: zarówno jego miejsca jak i temperatury początkowej.
 \item Aplikacja powinna umożliwiać także kontrolę nad symulacją: możliwość zatrzymania symulacji, wznowienia, rozpoczęcia od początku,
 a także dostosowanie tempa symulacji umożliwiającego obserwację zjawisk fizycznych.
-\item Dodatkowym elementem jest zapis wyników w postaci rozkładu temperatu do pliku, umożliwiający dogłębną analizę rezultatów.
+\item Dodatkowym elementem jest zapis wyników w postaci rozkładu temperatur do pliku, umożliwiający dogłębną analizę rezultatów.
 \item Wizualizacja powinna obejmować zarówno rozkład temperaturowy jak i rozprzestrzenianie się dymu. 
 \end {itemize}
 \section {Architektura aplikacji}
 Aplikacja została podzielona na trzy główne moduły:
 \begin{itemize}
 \item Controller - odpowiada za interakcję z użytkownikiem, dostarcza GUI umożliwiające kontrolę symulacji
-\item Model - przechowuje model symulacji, realizuje algorytmy rozprzestreniania ognia
+\item Model - przechowuje model symulacji, realizuje algorytmy rozprzestrzeniania ognia
 \item Scene - odpowiada za wizualizację wyników
 \end{itemize}
 Zależności pomiędzy poszczególnymi komponentami przedstawia diagram komponentów \ref{architektura aplikacji}
@@ -57,7 +57,7 @@ Funkcjonalności dostarczane przez moduł Controller przedstawia diagram \ref{pr
 
 \subsection {Moduł: Scene}
 Jedynym zadaniem sceny jest graficzne przedstawienie dostarczonego modelu.
-Calkowite uniezależnienie widoku od innych modułów umożliwia późniejszą jego modyfikację.
+Całkowite uniezależnienie widoku od innych modułów umożliwia późniejszą jego modyfikację.
 \subsection {Model}
 Został zastosowany przypadek aktywnego modelu, który potrafi zmieniać swój stan nie tylko w wyniku
 akcji użytkownika ale także samoczynnie. Aktywność modelu w przypadku symulacji polega na 
