@@ -1,0 +1,28 @@
+﻿%TODO dopisać coś wiecej dlaczego mniejsze komórki nie są potrzebne.
+% skala  budynku to że nie interesue nas jak dokładnie będzie się palić każde 10cm^3 ale 
+% jak ogien będzie się przemieszczał. rozmiar człowieka z perełe
+\chapter{Algorytm}
+\label{cha:Algorytm}
+Rozdział przedstawia propozycję algorytmu symulacji rozprzestrzeniania się ognia i dymu podczas pożaru.
+Przedstawiony poniżej model jest niehogenicznym automatem komórkowym i jako taki spełnia postulat niehomogeniczności.
+W pierwszej części rozdziału przedstawiono wartości parametrów tworzących automat komórkowy. Kolejne podrozdziały 
+zawierają szczegółowy opis kluczowych funkcji współtworzących funkcję przejścia.
+% Plan rozdziału
+% 1. Jaki typ automatu 3D. wielkość - określana przez usera
+% 2. Kształt komórek i wielkość komórek
+% 3. Sąsiedztwo - nieregularne, inni sąsiedzi przy krawedziach
+% 4. Zbiór stanow
+% 5. Funkcja przejscia
+% 6. W kolejnych podrozdziałach funkcje będące czynnikami funkcji przejścia - przewodnictwo, konwekcja, dym
+% 7. Rodzaje komórek. problem wąskich drzwi i jego rozwiązanie
+\section {Model automatu}
+Zgodnie ze wzorem \ref{def_automatu} będącym istotą przytoczonej w rozdziale \ref{cha:Automaty komórkowe} definicji automatu komórkowego według Weimara jednym z kluczowych elementów jest określenie siatki, czyli powierzchni automatu. W modelu symulaci pożaru w budynku
+ze względu na trójwymiarowość zjawiska oraz istotę jego rzeczywistego odtworzenia (możliwość wykorzystania wyników w celu
+opracowania modelu ewakuaci osób, badanie przyczyn katastrofy i drogi rozchozenia ognia) nabardziej naturalnym typem automatu 
+jest automat \textsl {trójwymiarowy}. 
+Rozmiar automatu jest wielkością zmienną, definiowaną przez użytkownika systemu. Pozwala to na odpowiedni dobór ilości komórek w zależności od wielkości rozpatrywanego budynku. Ze względu na fakt, że istotą przedstawionego modelu jest symulacja pożaru wewnątrz budynku 
+Zastosowany twójwymiarowy automat składa się z szcześciennych komórek o wymiarach $0.5m x 0.5m x 0.5m$. Wielkość komórek została wybrana empirycznie. 
+Odpowiedni dobór wielkości komórek automatu ma kluczowy wpływ na jego działanie. Zbyt mała ilość komórek może doprowadzić do utraty
+dokładności algorytmu oraz ukazać zniekształcony obraz działania modelu. Zbyt duża ilość elementów powoduje spadek wydajności algorytmu, a w komputerowej realizacji algorytmu oznacza zwiększone zapotrzebowanie na pamięć i moc procesora.
+Wybrany na podstawie doświadczeń rozmiar komórki jest najlepszym
+kompromisem między między czasem działania a dokładnością modelu.
