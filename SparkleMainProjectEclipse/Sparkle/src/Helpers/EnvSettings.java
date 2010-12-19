@@ -39,7 +39,7 @@ public class EnvSettings
     public static final int DOESNT_MATTER = 3;
 
     // ///////////////////user control constants
-	public static final double MOUSE_X_FACTOR = 0.2;
+	public static final double MOUSE_X_FACTOR = -0.2;
 	public static final double MOUSE_Y_FACTOR = -0.2;
 
     public static int getMAX_X()

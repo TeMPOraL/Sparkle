@@ -233,6 +233,11 @@ public class World
                 }
             }
         }
+        
+        //swap old and new state
+        // Cell [][][] tmp = _worldOldValues;
+        // _worldOldValues = _worldCurrentValues;
+        // _worldCurrentValues = tmp;
     }
 
     public void simulateHeatConduction()
@@ -252,12 +257,14 @@ public class World
             }
         }
         System.out.println( "done1" );
+//		updateOldValues();
         for( int i = 0; i < EnvSettings.getMAX_X(); ++i )
         {
             for( int j = 0; j < EnvSettings.getMAX_Y(); ++j )
             {
                 for( int k = 0; k < EnvSettings.getMAX_Z(); ++k )
                 {
+					//NOTE why it was here in the first place? we get n^6 algorithm this way, btw. ! !!~!
                     updateOldValues();
                     _heatConducter.conductHeat( _worldCurrentValues[ i ][ j ][ k ],
                         _worldCurrentValues, getNeighbours( new CellIndex( i, j, k ) ),
