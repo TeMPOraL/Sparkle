@@ -22,6 +22,7 @@ import Model.Material;
 
 import com.sun.j3d.utils.behaviors.keyboard.KeyNavigatorBehavior;
 import com.sun.j3d.utils.behaviors.mouse.MouseRotate;
+import com.sun.j3d.utils.behaviors.mouse.MouseWheelZoom;
 import com.sun.j3d.utils.geometry.Box;
 import com.sun.j3d.utils.universe.SimpleUniverse;
 
@@ -80,9 +81,15 @@ public class Scene3D
         keyInteractor.setSchedulingBounds( _bounds );
         _contents.addChild( keyInteractor );
         MouseRotate behavior = new MouseRotate();
+		MouseWheelZoom zoomBehavior = new MouseWheelZoom();
+		//slow down rotation movement and reverse the up-down movement controls
+		behavior.setFactor(behavior.getXFactor() * Helpers.EnvSettings.MOUSE_X_FACTOR, behavior.getYFactor() * Helpers.EnvSettings.MOUSE_Y_FACTOR);
         behavior.setTransformGroup( viewTransformGroup );
+		zoomBehavior.setTransformGroup(viewTransformGroup);
         _contents.addChild( behavior );
+		_contents.addChild( zoomBehavior );
         behavior.setSchedulingBounds( _bounds );
+		zoomBehavior.setSchedulingBounds(_bounds);
     }
 
     /**
@@ -159,7 +166,9 @@ public class Scene3D
 
     public void updateBlockWhileSimulation( int blockIndex, double temp, Material material )
     {
-         float scale = clamp( (float)( temp / EnvSettings.FIRE_TEMP ), 0.0f, 1.0f );
+///        System.out
+                // .println( "material transparency " + material.get_transparency() + " " + material );
+        float scale = clamp( (float)( temp / EnvSettings.FIRE_TEMP ), 0.0f, 1.0f );
         setCellColor( new Color3f( lerp( 0.0f, 1.0f, scale ), // red
             0.0f, // green
             lerp( 1.0f, 0.0f, scale ) ), blockIndex, material );
